@@ -326,7 +326,7 @@ def generate_output():
 
                     else:
                         unique_ids.append(seq.id)
-                        sequence = str(seq.seq.ungap("-"))
+                        sequence = str(seq.seq.replace("-", ""))
                         sequences_dictionary[str(seq.id)] = sequence
                         seq_output.append(str(seq.id) + " " + sequence + "\n")
 
